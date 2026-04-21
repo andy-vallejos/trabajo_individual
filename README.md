@@ -20,6 +20,10 @@ Para mi sistema operativo que es linux es el siguiente comando:
 
 ![alt text](/public/image.png)
 
+### Configuraciones basicas
+
+![alt text](/public/image2.png)
+
 ### Git add
 
 Git add mueve los cambios de la carpeta al staging area.

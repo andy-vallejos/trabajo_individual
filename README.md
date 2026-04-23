@@ -121,3 +121,48 @@ No usar punto final
 Descriptivos
 Usar como maximo 50 caracteres
 ![alt text](/public/image4.png)
+
+## Clase 3
+### ¿Que es GitHub?
+Es la red social de los programadores, en donde puedes almacenar tus repositorios de manera remota.
+### Tipos de clonado
+#### Https 
+''''
+https://github.com/user/repo.git
+''''
+Usa protocolo web (como navegar en internet)
+Te autenticas con:
+usuario + token personal (PAT) (ya no contraseña)
+VENTAJAS
+- Fácil de usar
+- No necesitas configuración extra
+- Funciona en cualquier red
+DESVENTAJAS: 
+Tienes que ingresar credenciales (o token) a veces
+Menos cómodo para uso frecuente
+#### Ssh
+''''
+git@github.com:user/repo.git
+''''
+Usa claves criptográficas (una pública y una privada).
+Configuras tu llave SSH una vez en tu PC y en GitHub
+VENTAJAS:
+No tienes que escribir contraseña nunca más
+Más seguro y profesional
+Ideal para uso constante
+DESVENTAJAS: 
+Requiere configuración inicial (generar clave SSH)
+#### Cli
+''''
+gh repo clone user/repo
+''''
+Aquí hay una pequeña confusión: no es un protocolo como HTTPS o SSH, sino una herramienta.
+Usas comandos gh
+Ya estás autenticado en GitHub CLI
+Internamente usa HTTPS o SSH (pero tú no lo notas)
+VENTAJAS: 
+Más cómodo (no copias URLs)
+Integración con GitHub (issues, PRs, etc.)
+Ideal para productividad
+DESVENTAJAS:
+Necesitas instalar la herramienta gh

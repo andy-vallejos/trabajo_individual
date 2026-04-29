@@ -220,3 +220,26 @@ release/ → preparación de versiones
 hotfix/ → arreglos urgentes en producción
 
 Desarrollas en develop, publicas en main
+
+## Clase 6
+
+### Git fetch
+
+git fetch es básicamente traer cambios del repositorio remoto sin mezclarlos todavía.
+
+```
+    git fetch origin
+```
+
+### Git pull
+
+git pull es un comando que trae cambios del repositorio remoto y los aplica directamente en tu rama actual.
+
+```
+    git pull origin main
+```
+
+### Git Merge
+
+merge = fusion
+git merge sirve para unir los cambios de una rama en otra.

@@ -243,3 +243,17 @@ git pull es un comando que trae cambios del repositorio remoto y los aplica dire
 
 merge = fusion
 git merge sirve para unir los cambios de una rama en otra.
+
+## Clase 7
+
+### Pull Request
+
+Los PRs se usan para asegurar que los cambios en el código sean revisados antes de integrarse al proyecto. Esto evita errores o código malicioso y mejora la calidad del trabajo en equipo. Además, fomentan la revisión y discusión entre desarrolladores. Para mayor seguridad, también se deben configurar protecciones en el repositorio para impedir merges directos sin aprobación.
+
+### Fork
+
+Un fork es una copia de un repositorio en tu propia cuenta de GitHub (u otra plataforma).
+Sirve para:
+Poder trabajar libremente sin afectar el proyecto original.
+Hacer cambios, pruebas o mejoras.
+Luego, si quieres, proponer esos cambios al proyecto original mediante un Pull Request.

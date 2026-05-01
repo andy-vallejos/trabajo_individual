@@ -331,3 +331,53 @@ Sirve para:
 Poder trabajar libremente sin afectar el proyecto original.
 Hacer cambios, pruebas o mejoras.
 Luego, si quieres, proponer esos cambios al proyecto original mediante un Pull Request.
+
+## Clase 8
+
+### Git diff
+
+```
+    git diff
+```
+
+Te muestra los cambios que hiciste pero aún no has guardado (no staged).
+
+### Git diff
+
+```
+    git diff .
+```
+
+mostrar los cambios en todos los archivos del directorio actual (.) y sus subcarpetas.
+
+### Git diff archivo
+
+```
+ git diff archivo
+```
+
+Te muestra qué líneas cambiaste en ese archivo.
+
+### Git diff --staged
+
+```
+    git diff --staged .
+```
+
+Ver los cambios que ya agregaste al staging (git add) en todos los archivos del directorio actual (.).
+
+### Git diff --staged archivo
+
+```
+    git diff --staged archivo
+```
+
+Ver los cambios de un archivo específico que ya están en staging (listos para commit).
+
+### Git diff rama1 rama2
+
+```
+    git diff rama1 rama2
+```
+
+Ver las diferencias entre dos ramas.

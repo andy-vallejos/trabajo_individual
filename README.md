@@ -181,6 +181,79 @@ VENTAJAS:
   DESVENTAJAS:
 - Necesitas instalar la herramienta gh
 
+## Clase 4
+
+### SSH para múltiples cuentas en Git
+
+### 1. Crear una clave por cuenta
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_personal
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519_work
+```
+
+---
+
+### 2. Configurar el archivo SSH
+
+Editar o crear:
+
+```bash
+nano ~/.ssh/config
+```
+
+Agregar:
+
+```bash
+Host github-personal
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_personal
+
+Host github-work
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_work
+```
+
+---
+
+### 3. Subir las claves a GitHub
+
+Copiar las claves públicas:
+
+```bash
+cat ~/.ssh/id_ed25519_personal.pub
+cat ~/.ssh/id_ed25519_work.pub
+```
+
+Luego pegarlas en:
+**Settings → SSH and GPG keys** de cada cuenta.
+
+---
+
+### 4. Clonar usando el alias
+
+```bash
+git clone git@github-personal:user/repo.git
+git clone git@github-work:empresa/repo.git
+```
+
+---
+
+### 5. (Opcional) Configurar identidad por repositorio
+
+```bash
+git config user.name "Tu Nombre"
+git config user.email "tu@email.com"
+```
+
+---
+
+### Idea clave
+
+Usas **aliases (`github-personal`, `github-work`)** para que SSH sepa qué clave usar en cada repositorio.
+
 ## Clase 5
 
 ### Ramas
@@ -242,6 +315,7 @@ git pull es un comando que trae cambios del repositorio remoto y los aplica dire
 ### Git Merge
 
 merge = fusion
+
 git merge sirve para unir los cambios de una rama en otra.
 
 ## Clase 7
